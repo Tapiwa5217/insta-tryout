@@ -1,0 +1,12 @@
+$colors: (
+    "fb-color": #0095f6,
+    "grey-words": #8e8e8e
+
+);
+
+@mixin flex($direction,$justify,$align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

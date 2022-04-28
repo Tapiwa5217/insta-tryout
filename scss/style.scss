@@ -1,0 +1,201 @@
+@import 'generals';
+@import 'utilities';
+
+#main {
+    #nav-section {
+        position: relative;
+        padding: 20px 0;
+
+        #nav-menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px 20px;
+        svg {
+            fill: map-get($colors, "grey-words");
+            width: 13px;
+        }
+    }
+
+    #languages {
+        color: map-get($colors, "grey-words");
+        @include flex(row,center,center);
+        font-size: 12px;
+ 
+        p {
+            @include flex(row,center,center);
+        span {
+
+            svg {
+              transform: scale(0.4);
+              
+            }
+        }
+    }
+    }
+    
+}
+#logo-section {
+    margin: 40px 0;
+    #logo {
+        @include flex(row,center,center);
+
+        img {
+            width: 175px;
+
+        }
+    }
+}
+
+#login-section {
+    @include flex(row,center,center);
+    button {
+        @include flex(row, center,center);
+        border: 0px solid map-get($colors, "grey-words");
+        outline: none;
+        padding: 3px;
+        width: 70%;
+        color: #fff;
+        background-color: map-get($colors, "fb-color");
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 5px;
+
+        span {
+            margin-right: 5px;
+            svg {
+                fill: #fff;
+                transform: scale(0.75);
+            }
+        }
+
+    }
+}
+
+#or-section {
+    position: relative;
+    padding: 20x 0;
+    //background-color: pink;
+    @include flex(row,center,center);
+    
+    
+    hr {
+        margin: 30px 0;
+        width: 70%;
+        background-color: #f0f0f0;
+        height: 2px;
+        border: none;
+        
+    }
+
+    p {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        padding: 0 20px;
+        font-weight: 500;
+        color: #aaa;
+    }
+}
+
+form {
+
+    @include flex(column,center,center);
+
+    #username-section {
+        @include flex(row,center,center);
+        margin: 5px;
+        width: 100vw;
+
+        input {
+            width: 70%;
+            padding: 12px;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            background-color: #fafafa;
+            outline: none;
+        }
+    }
+    #password-section {
+        @include flex(row,center,center);
+        margin: 5px;
+        width: 100vw;
+
+        input {
+            width: 70%;
+            padding: 12px;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            background-color: #fafafa;
+            outline: none;
+        }
+    }
+
+    #forgot-password {
+        width: 70%;
+        text-align: right;
+        margin: 10px;
+        font-size: 14px;
+
+        a {
+            color: rgba(2, 133, 255, 0.904);
+            text-decoration: none;
+        }
+    }
+
+    #submit-section {
+        @include flex(row,center,center);
+        width: 100VW;
+        margin: 20px;
+        button {
+            
+            border: 0px solid map-get($colors, "grey-words");
+            outline: none;
+            padding: 7px;
+            width: 70%;
+            color: #fff;
+            background-color: lighten(map-get($colors, "fb-color"),30%);
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 3px;
+        }
+    }
+
+    #create-account {
+       // margin: 10px;
+        font-size: 15px;
+        color: map-get($colors, "grey-words");
+
+        a {
+            color: rgba(2, 133, 255, 0.904);
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+}
+}
+
+footer {
+     position: fixed;
+     background-color: #fafafa;
+     border-top: 1px solid #dbdbdb;
+     width: 100vw;
+     bottom: 0;
+     padding: 10px 0;
+     @include flex(column,center,center);
+
+     p {
+         font-size: 11px;
+         color: #bbb;
+         font-weight: 700;
+     }
+
+    #meta-image {
+        
+        img {
+            width: 50px;
+        }
+    }
+}
